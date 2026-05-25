@@ -4,7 +4,7 @@
  */
 
 import React, { useEffect, useState } from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { ChevronDown, MessageSquare } from 'lucide-react';
 import { Language } from '../types';
 import { TRANSLATIONS, CONTACT_INFO, IMAGES } from '../data';

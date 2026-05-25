@@ -4,7 +4,7 @@
  */
 
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Play, Youtube, Instagram, Facebook, Users, Heart, Share2, Award, ExternalLink, Send } from 'lucide-react';
 import { Language, YouTubeVideo } from '../types';
 import { TRANSLATIONS, YOUTUBE_VIDEOS } from '../data';

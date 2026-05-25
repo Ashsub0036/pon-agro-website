@@ -12,7 +12,7 @@ import {
   X,
 } from 'lucide-react';
 
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 import { Language } from '../types';
 import { CONTACT_INFO } from '../data';

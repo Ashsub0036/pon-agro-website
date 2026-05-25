@@ -1,8 +1,8 @@
 import React from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Tractor, ShieldAlert, Award, Phone, Users, MapPin, Sparkles, MessageSquare, ArrowUpRight, ArrowRight, Settings } from 'lucide-react';
 import { Language } from '../types';
-import { TRANSLATIONS, CONTACT_INFO, STATS } from '../data';
+import { TRANSLATIONS, CONTACT_INFO, STATS, IMAGES } from '../data';
 import FAQs from '../components/FAQs';
 
 interface HomeProps {
@@ -88,17 +88,22 @@ export default function Home({ lang, onNavigate }: HomeProps) {
     <div id="home-page-container" className="w-full">
       {/* Immersive Cinematic Hero Header */}
       <section id="home-hero" className="relative text-white pt-36 pb-24 md:py-48 overflow-hidden bg-slate-950">
-        {/* Background Image Panel */}
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-900/80 to-transparent z-10" />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent z-10" />
-          <img 
-            src="/src/assets/images/hero_tractor_field_1779611911714.png" 
-            alt="Tractor field Tamil Nadu" 
-            referrerPolicy="no-referrer"
-            className="w-full h-full object-cover object-center opacity-45 scale-102"
-          />
-        </div>
+      {/* Background Image Panel */}
+<div className="absolute inset-0 z-0">
+
+  {/* Dark overlays */}
+  <div className="absolute inset-0 bg-gradient-to-r from-gray-950 via-gray-900/80 to-transparent z-10" />
+
+  <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent z-10" />
+
+  {/* Hero Background Image */}
+  <img
+    src={IMAGES.heroBg}
+    alt="Tractor field Tamil Nadu"
+    className="w-full h-full object-cover object-center opacity-45 scale-105"
+  />
+
+</div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -155,7 +160,7 @@ export default function Home({ lang, onNavigate }: HomeProps) {
               >
                 <button
                   onClick={() => onNavigate('#/products')}
-                  className="flex items-center justify-center space-x-2 px-6 py-4 rounded-xl bg-primary-green hover:bg-green-700 text-white font-black text-base shadow-lg shadow-green-700/20 hover:shadow-green-700/40 transition-all cursor-pointer group-hover:scale-103"
+                  className="flex items-center justify-center space-x-2 px-6 py-4 rounded-xl bg-primary-green hover:bg-green-700 text-white font-black text-base shadow-lg shadow-green-700/20 hover:shadow-green-700/40 transition-all cursor-pointer group-hover:scale-105"
                 >
                   <Tractor className="h-5 w-5 text-secondary-yellow shrink-0" />
                   <span>{t.btnViewProducts}</span>
@@ -182,12 +187,11 @@ export default function Home({ lang, onNavigate }: HomeProps) {
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl" />
                 
-                <img 
-                  src="/src/assets/images/rota_leveler_machinery_1779611945867.png" 
-                  alt="Rota Leveler structural detail"
-                  referrerPolicy="no-referrer"
-                  className="w-full aspect-[4/3] object-cover rounded-2xl border border-white/5 opacity-90 group-hover:scale-[1.02] transition-transform duration-500"
-                />
+               <img
+  src={IMAGES.rotaLevelerProd}
+  alt="Rota Leveler structural detail"
+  className="w-full aspect-[4/3] object-cover rounded-2xl border border-white/5 opacity-90 group-hover:scale-105 transition-transform duration-500"
+/>
 
                 <div className="mt-4 flex justify-between items-center bg-white/5 p-4 rounded-2xl border border-white/5">
                   <div>

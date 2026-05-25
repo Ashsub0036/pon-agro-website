@@ -4,7 +4,7 @@
 import logo from '../assets/pon-logo.jpeg';
 import React, { useEffect, useState } from 'react';
 import { Menu, X, Globe, MessageSquare, Tractor } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Language } from '../types';
 import { TRANSLATIONS, CONTACT_INFO } from '../data';
 
@@ -150,6 +150,59 @@ export default function Navbar({
           </div>
         </div>
       </nav>
+      {/* Mobile Menu */}
+{mobileOpen && (
+  <motion.div
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: -20 }}
+    transition={{ duration: 0.3 }}
+    className="fixed top-20 left-0 w-full bg-slate-950 border-t border-white/10 z-40 lg:hidden"
+  >
+    <div className="flex flex-col px-6 py-6 space-y-5">
+
+      {menuItems.map((item) => (
+        <a
+          key={item.hash}
+          href={item.hash}
+          onClick={() => setMobileOpen(false)}
+          className="text-white text-lg font-semibold hover:text-green-400 transition-colors"
+        >
+          {item.label}
+        </a>
+      ))}
+
+      {/* Language Button */}
+      <button
+        onClick={() =>
+          setLang(lang === 'en' ? 'ta' : 'en')
+        }
+        className="flex items-center gap-2 text-white pt-2"
+      >
+        <Globe className="h-5 w-5" />
+
+        <span>
+          {lang === 'en'
+            ? 'தமிழ்'
+            : 'EN'}
+        </span>
+      </button>
+
+      {/* WhatsApp */}
+      <a
+        href={CONTACT_INFO.whatsapp}
+        target="_blank"
+        rel="noreferrer"
+        className="flex items-center justify-center gap-2 px-5 py-4 rounded-xl bg-green-600 hover:bg-green-700 text-white font-semibold transition-all"
+      >
+        <MessageSquare className="h-5 w-5" />
+
+        <span>{t.btnEnquiry}</span>
+      </a>
+
+    </div>
+  </motion.div>
+)}
     </>
   );
 }

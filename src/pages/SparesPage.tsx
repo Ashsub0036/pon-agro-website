@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { ShieldCheck, HardHat, Settings, Wrench, RefreshCw, MessageSquare, AlertTriangle, CheckSquare, Search } from 'lucide-react';
 import { Language } from '../types';
 import { PRODUCTS, TRANSLATIONS } from '../data';

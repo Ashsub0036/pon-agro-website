@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { ShieldCheck, Flame, Hammer, MapPin, Sparkles, Star, Award, Pocket } from 'lucide-react';
 import { Language } from '../types';
 
@@ -71,7 +71,7 @@ export default function WorkshopPage({ lang }: WorkshopPageProps) {
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-gradient-to-r from-gray-905 via-gray-900/80 to-transparent z-10" />
             <img 
-              src="/src/assets/images/agro_workshop_craft_1779611929907.png" 
+              src="/images/agro_workshop_craft_1779611929907.png" 
               alt="PON AGRO Vandavasi Workshop Forge" 
               className="w-full h-full object-cover object-center opacity-30 select-none pointer-events-none"
             />

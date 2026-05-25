@@ -2,19 +2,38 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
+import {
+  Product,
+  Stat,
+  Testimonial,
+  YouTubeVideo,
+} from './types';
 
-import { Product, Testimonial, YouTubeVideo, Stat, GalleryItem } from './types';
+import heroBg from './assets/images/hero_tractor_field_1779611911714.png';
 
-// Let's use the actual generated images with safe default fallbacks just in case
+import workshopDetail from './assets/images/agro_workshop_craft_1779611929907.png';
+
+import rotaLevelerProd from './assets/images/rota_leveler_machinery_1779611945867.png';
+
 export const IMAGES = {
-  heroBg: '/src/assets/images/hero_tractor_field_1779611911714.png',
-  workshopDetail: '/src/assets/images/agro_workshop_craft_1779611929907.png',
-  rotaLevelerProd: '/src/assets/images/rota_leveler_machinery_1779611945867.png',
-  bearings: 'https://images.unsplash.com/photo-1618979287755-900f07466cf8?auto=format&fit=crop&q=80&w=800',
-  adapters: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800',
-  spareParts: 'https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80&w=800',
-  rotavatorFields: 'https://images.unsplash.com/photo-1530906358369-a5dcf85b8801?auto=format&fit=crop&q=80&w=800',
-  customerDelivery: 'https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&q=80&w=800',
+  heroBg,
+  workshopDetail,
+  rotaLevelerProd,
+
+  bearings:
+    'https://images.unsplash.com/photo-1618979287755-900f07466cf8?auto=format&fit=crop&q=80&w=800',
+
+  adapters:
+    'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800',
+
+  spareParts:
+    'https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80&w=800',
+
+  rotavatorFields:
+    'https://images.unsplash.com/photo-1530906358369-a5dcf85b8801?auto=format&fit=crop&q=80&w=800',
+
+  customerDelivery:
+    'https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&q=80&w=800',
 };
 
 export const CONTACT_INFO = {

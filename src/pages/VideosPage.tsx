@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Play, Youtube, Award, ExternalLink, MessageSquare, Flame, HelpCircle, Layers, Search } from 'lucide-react';
 import { Language, YouTubeVideo } from '../types';
 import { TRANSLATIONS, YOUTUBE_VIDEOS, CONTACT_INFO } from '../data';
