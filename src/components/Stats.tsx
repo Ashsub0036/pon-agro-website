@@ -95,7 +95,7 @@ export default function Stats({ lang }: StatsProps) {
       titleEn: 'Direct Factory Manufacturing',
       titleTa: 'நேரடி தொழிற்சாலை தயாரிப்பு',
       descEn:
-        'No middlemen. Built directly in our Vandavasi workshop with premium agricultural steel.',
+        'No middlemen. Built directly in our Vandavasi workshop with reliable agricultural steel.',
       descTa:
         'இடைத்தரகர்கள் இல்லை. வந்தவாசி தொழிற்சாலையில் நேரடியாக தயாரிப்பு.',
     },

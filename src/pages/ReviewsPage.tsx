@@ -54,9 +54,9 @@ export default function ReviewsPage({
     payment: 'CASH',
     amount: '₹5,400',
     reviewTextEn:
-      'High quality carbon steel spares! The delivery was extremely quick directly from Vandavasi and fits our rotavator adapter perfectly. Highly reliable service.',
+      'A very useful innovation for farmers. Thank you, sir.',
     reviewTextTa:
-      'முழுமையான தரமான உதிரிபாகங்கள்! காஞ்சிபுரம் பைபாஸ் அருகில் உள்ள வந்தவாசி பட்டறையிலிருந்து உடனே கிடைத்தது. அருமையான பொருத்தம்.',
+      'நீண்ட நாள் தேவைக்கான சிறந்த கண்டுபிடிப்பு நன்றி சார்',
     rating: 5,
   },
 
@@ -67,9 +67,9 @@ export default function ReviewsPage({
     payment: 'CASH',
     amount: '₹4,600',
     reviewTextEn:
-      'Extremely durable double-coat structural paint on the spares. Fits and locks completely flat. Works flawlessly on flooded clay fields.',
+      'Excellent agricultural innovation 🎉',
     reviewTextTa:
-      'வந்தவாசி பொன் அக்ரோவில் அசல் உதிரிபாகம் வாங்கினேன். தண்ணீரில் வேலை செய்தாலும் துருப்பிடிக்காத தரம்.',
+      'நல்ல கண்டுபிடிப்பு 🎉🎉🎉',
     rating: 5,
   },
 
@@ -80,9 +80,9 @@ export default function ReviewsPage({
     payment: 'CASH',
     amount: '₹5,200',
     reviewTextEn:
-      'Superb strength and finish. The Boron steel material really does make a massive difference.',
+      'Brother, your product quality is genuinely excellent.',
     reviewTextTa:
-      'தரமான போரான் இரும்பு பலம். மற்ற கடைகளில் வாங்குவதை விட இரண்டு மடங்கு கூடுதல் நாட்களாக உழைக்கிறது.',
+      'அண்ணா உங்கள் பொருள் உண்மையாகவே தரமாக இருக்கிறது',
     rating: 5,
   },
 
@@ -93,9 +93,9 @@ export default function ReviewsPage({
     payment: 'CASH',
     amount: '₹4,900',
     reviewTextEn:
-      'Value for money product bro. Bought replacement blade kit. Exceptionally sharp and durable.',
+      'Good build quality. Using it regularly in our fields and performance is very smooth.',
     reviewTextTa:
-      'விவசாயிகளுக்கு ஏற்ற குறைந்த கட்டணத்தில் நிறைந்த தரமான உதிரிபாகப் பெட்டி.',
+      'தரமான தயாரிப்பு. எங்கள் வயலில் தொடர்ந்து பயன்படுத்துகிறோம், மிகவும் நன்றாக செயல்படுகிறது.',
     rating: 5,
   },
 
@@ -106,141 +106,13 @@ export default function ReviewsPage({
     payment: 'UPI',
     amount: '₹35,000',
     reviewTextEn:
-      'Bought the PON Rota Leveler for wet paddy soil. It levels completely flat in one pass.',
+      'Strong implement. Even in wet soil the balance is good.',
     reviewTextTa:
-      'சேற்று உழவில் ஒரே படல உழவில் நிலத்தை கச்சிதமாக சமப்படுத்துகிறது.',
+      'வெதுவெதுப்பான நிலத்திலும் நல்ல சமநிலையுடன் வேலை செய்கிறது.',
     rating: 5,
   },
 
-  {
-    date: '2026-01-14',
-    customer: 'ARUN',
-    items: '1 items',
-    payment: 'UPI',
-    amount: '₹4,700',
-    reviewTextEn:
-      'Highly recommended for TN farmers. Premium carbon bearings and clean welds.',
-    reviewTextTa:
-      'சேறு மற்றும் தூசிகள் உள்ளே புகாத வண்ணம் வடிவமைக்கப்பட்ட கார்பன் பேரிங்ஸ்.',
-    rating: 5,
-  },
 
-  {
-    date: '2026-02-13',
-    customer: 'THAMIZHARASAN.S',
-    items: '1 items',
-    payment: 'UPI',
-    amount: '₹30,000',
-    reviewTextEn:
-      'Exceptional heavy-duty performance. Absolutely no bending or cracks.',
-    reviewTextTa:
-      'கரடுமுரடான நிலத்தில்கூட வளைவோ அல்லது உடையோ இல்லாமல் அபாரமாக உழைக்கிறது.',
-    rating: 5,
-  },
-
-  {
-    date: '2026-03-12',
-    customer: 'MUTHUKRISHNAN',
-    items: '1 items',
-    payment: 'UPI',
-    amount: '₹34,500',
-    reviewTextEn:
-      'Best engineering in Rota levelers. Smooth operation and excellent vibration control.',
-    reviewTextTa:
-      'இரட்டை ஸ்பிரிங் தொழில்நுட்பம் டிராக்டரின் அதிர்வை அபாரமாகத் தாங்குகிறது.',
-    rating: 5,
-  },
-
-  {
-    date: '2026-04-16',
-    customer: 'HARIGARAN',
-    items: '1 items',
-    payment: 'UPI',
-    amount: '₹33,500',
-    reviewTextEn:
-      'Direct factory pricing with unmatched structural robustness.',
-    reviewTextTa:
-      'வந்தவாசி பட்டறையில் நேரடியாக வாங்கியதால் ஏஜென்சி கமிஷன் மிச்சமானது.',
-    rating: 5,
-  },
-
-  {
-    date: '2026-03-31',
-    customer: 'PALANI',
-    items: '1 items',
-    payment: 'CASH',
-    amount: '₹5,200',
-    reviewTextEn:
-      'Amazing durability under extreme stress. Fits our standard hitches smoothly.',
-    reviewTextTa:
-      'உயர்ந்த ரக இரும்பு கொண்டு வார்க்கப்பட்ட கருவிகள்.',
-    rating: 5,
-  },
-
-  {
-    date: '2026-04-16',
-    customer: 'BHARATHI',
-    items: '1 items',
-    payment: 'CASH',
-    amount: '₹4,700',
-    reviewTextEn:
-      'Heavy duty blades kit. Soil grinding feels smooth with optimized curves.',
-    reviewTextTa:
-      'போரான் கலந்த ஹெவி பிளேடுகள். நெல் வயலுக்கு கச்சிதமான வளைவுகள்.',
-    rating: 5,
-  },
-
-  {
-    date: '2026-02-27',
-    customer: 'LAKSHMIKANDAN',
-    items: '1 items',
-    payment: 'UPI',
-    amount: '₹3,200',
-    reviewTextEn:
-      'Excellent replacement spares kit. Zero slippage in muddy operations.',
-    reviewTextTa:
-      'சேற்றில் ஓட்டினாலும் கச்சிதமான பிடிமானம் தருகிறது.',
-    rating: 5,
-  },
-
-  {
-    date: '2026-03-09',
-    customer: 'KUMAR',
-    items: '1 items',
-    payment: 'CASH',
-    amount: '₹4,900',
-    reviewTextEn:
-      'Very tough and highly reliable components. Highly satisfied.',
-    reviewTextTa:
-      'மிகவும் உறுதியான பொருட்கள் மற்றும் அசல் இரும்பு தரம்.',
-    rating: 5,
-  },
-
-  {
-    date: '2026-01-26',
-    customer: 'PALANI .K',
-    items: '1 items',
-    payment: 'UPI',
-    amount: '₹4,700',
-    reviewTextEn:
-      'Excellent PTO conversion shafts. High wear tolerance and zero vibration.',
-    reviewTextTa:
-      'எந்த ஒரு அதிர்வும் இன்றி சுழல்கிறது.',
-    rating: 5,
-  },
-
-  {
-    date: '2026-02-06',
-    customer: 'THIRUPATHI AGRO AGENCY',
-    items: '1 items',
-    payment: 'UPI',
-    amount: '₹4,700',
-    reviewTextEn:
-      'Phenomenal customer feedback across rural villages.',
-    reviewTextTa:
-      'விவசாயிகளிடமிருந்து மிகுந்த பாராட்டு கிடைத்துள்ளது.',
-    rating: 5,
-  },
 ];
 
   const filteredLedger =

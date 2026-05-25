@@ -86,7 +86,7 @@ export default function Footer({ lang }: FooterProps) {
               <h2 className="mt-6 text-4xl font-black leading-[0.95] tracking-tight text-white md:text-6xl">
                 {lang === 'ta'
                   ? 'தமிழ்நாடு விவசாயிகளுக்கான தரமான கருவிகள்'
-                  : 'Premium Agricultural Implements For Tamil Nadu'}
+                  : 'Reliable Agricultural Implements For Tamil Nadu'}
               </h2>
 
               <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-300">

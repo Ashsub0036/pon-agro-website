@@ -124,7 +124,7 @@ ${formMessage}`
           <h1 className="text-5xl sm:text-7xl font-black leading-[0.9] tracking-tight max-w-5xl mx-auto">
 
             <span className="bg-gradient-to-r from-white via-green-100 to-yellow-200 bg-clip-text text-transparent">
-              Premium Agricultural Implements
+              Reliable Agricultural Implements
             </span>
 
           </h1>

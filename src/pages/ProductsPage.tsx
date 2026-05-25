@@ -152,7 +152,7 @@ export default function ProductsPage({
             transition={{ duration: 0.8 }}
             className="text-4xl sm:text-7xl font-black text-white leading-none tracking-tight max-w-5xl mx-auto"
           >
-            Premium Agricultural Implements
+            Reliable Agricultural Implements
           </motion.h1>
 
           <motion.p

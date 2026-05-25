@@ -25,7 +25,7 @@ export default function StickyMobileCTA({
   lang,
 }: StickyMobileCTAProps) {
   const [showBar, setShowBar] = useState(false);
-
+   const [isClosed, setIsClosed] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 300) {
@@ -45,7 +45,7 @@ export default function StickyMobileCTA({
     <>
       {/* Floating Scroll To Top */}
       <AnimatePresence>
-        {showBar && (
+        {showBar && !isClosed &&(
           <motion.button
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -64,17 +64,20 @@ export default function StickyMobileCTA({
         )}
       </AnimatePresence>
 
-      {/* Sticky Bottom Dock */}
-      <motion.div
-        initial={{ y: 120 }}
-        animate={{ y: 0 }}
-        transition={{
-          duration: 0.5,
-          ease: 'easeOut',
-        }}
-        id="mobile-sticky-dock"
-        className="md:hidden fixed bottom-0 left-0 w-full z-50 px-3 pb-3"
-      >
+       {/* Sticky Bottom Dock */}
+<AnimatePresence>
+  {showBar && !isClosed && (
+    <motion.div
+      initial={{ y: 120, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      exit={{ y: 120, opacity: 0 }}
+      transition={{
+        duration: 0.4,
+        ease: 'easeOut',
+      }}
+      id="mobile-sticky-dock"
+      className="md:hidden fixed bottom-0 left-0 w-full z-50 px-3 pb-3"
+    >
         <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-white/90 backdrop-blur-2xl shadow-[0_-10px_40px_rgba(0,0,0,0.12)]">
           
           {/* Background Gradient */}
@@ -101,9 +104,12 @@ export default function StickyMobileCTA({
                 </p>
               </div>
 
-              <button className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-500">
-                <X className="h-4 w-4" />
-              </button>
+             <button
+  onClick={() => setIsClosed(true)}
+  className="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors flex items-center justify-center text-gray-500"
+>
+  <X className="h-4 w-4" />
+</button>
             </div>
 
             {/* CTA Buttons */}
@@ -195,6 +201,8 @@ export default function StickyMobileCTA({
           </div>
         </div>
       </motion.div>
+        )}
+</AnimatePresence>
     </>
   );
 }

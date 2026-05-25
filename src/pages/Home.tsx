@@ -17,10 +17,10 @@ export default function Home({ lang, onNavigate }: HomeProps) {
     {
       id: 'mfg',
       icon: <Award className="h-7 w-7 text-secondary-yellow" />,
-      titleEn: '100% Direct Manufacturer',
+      titleEn: 'Direct Factory Supply',
       titleTa: '100% நேரடித் தயாரிப்பாளர்',
-      descEn: 'Buy directly from our Vandavasi workshop. Zero dealer markup and no middleman broker commission.',
-      descTa: 'எங்கள் வந்தவாசி பட்டறையிலிருந்து நேரடியாக வாங்குங்கள். இடைத்தரகர்கள் அல்லது டீலர் கமிஷன்கள் எதுவும் இல்லை.',
+      descEn: 'Factory-direct agricultural implements with reliable pricing and quality manufacturing standards.',
+      descTa: 'நேரடி தொழிற்சாலை விநியோகம் மற்றும் நம்பகமான தரமான உற்பத்தி.',
       color: 'bg-emerald-900/10 border-emerald-500/20'
     },
     {
@@ -35,10 +35,10 @@ export default function Home({ lang, onNavigate }: HomeProps) {
     {
       id: 'soil',
       icon: <MapPin className="h-7 w-7 text-secondary-yellow" />,
-      titleEn: 'Tested in Real Soil',
+      titleEn: 'Field Tested Across Multiple Soil Types',
       titleTa: 'நம் நிலங்களில் களச் சோதனை',
-      descEn: 'Specifically calibrated for the gravel, loam, and muddy wetland paddy soils of Tiruvannamalai.',
-      descTa: 'திருவண்ணாமலை மாவட்டத்தின் சேற்று உழவுக்கும் மற்றும் கடினமான நிலங்களுக்கும் பிரத்யேகமாக சோதிக்கப்பட்டது.',
+      descEn: 'Designed and tested for clay, gravel, wetland, and dry agricultural soils across Tamil Nadu.',
+      descTa: 'தமிழ்நாட்டின் பல்வேறு சேறு, மணல், களிமண் மற்றும் உலர் நிலங்களில் சோதித்து உருவாக்கப்பட்டது.',
       color: 'bg-amber-900/10 border-amber-500/20'
     }
   ];
@@ -134,8 +134,8 @@ export default function Home({ lang, onNavigate }: HomeProps) {
                   </>
                 ) : (
                   <>
-                    Unyielding Power for <br />
-                    <span className="text-secondary-yellow bg-gradient-to-r from-yellow-300 to-amber-400 bg-clip-text text-transparent">Tough Agrarian Soils.</span>
+                    Shape Our Farmers's Need  <br />
+                    <span className="text-secondary-yellow bg-gradient-to-r from-yellow-300 to-amber-400 bg-clip-text text-transparent">Made For Everyday Farming.</span>
                   </>
                 )}
               </motion.h1>
@@ -147,8 +147,8 @@ export default function Home({ lang, onNavigate }: HomeProps) {
                 className="text-base sm:text-lg text-slate-300 max-w-xl font-medium leading-relaxed"
               >
                 {lang === 'ta' ? 
-                  'வந்தவாசி பொன் அக்ரோ இம்ப்ளிமெண்ட்ஸ் - ஸ்ட்ரக்சுரல் கார்பன் ஸ்டீல் மற்றும் போரான் பிளேடுகள் கொண்டு விவசாய மக்களுக்காக உருவாக்கப்படும் உன்னத கருவிகள்.' :
-                  'PON AGRO IMPLEMENTS - Heavy duty, single and dual spring levelers, adapters, and high-precision farm attachments fabricated directly at our Vandavasi forge workshop.'}
+                  'வந்தவாசி பொன் அக்ரோ இம்ப்ளிமெண்ட்ஸ் - உயர்தர விவசாய கருவிகள் மற்றும் துல்லியமான பண்ணை உபகரணங்கள் எங்கள் பட்டறையில் நேரடியாக தயாரிக்கப்படுகின்றன.' :
+                  'PON AGRO IMPLEMENTS - Heavy-duty agricultural implements and precision farm attachments manufactured directly from our workshop.'}
               </motion.p>
 
               {/* Primary Dual Actions */}

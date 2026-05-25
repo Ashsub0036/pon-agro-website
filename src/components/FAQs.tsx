@@ -26,11 +26,12 @@ export default function FAQs({ lang }: FAQsProps) {
 
   const faqs = [
     {
-      q: 'How do I maintain the leveler springs?',
+      q: 'How do I maintain the implement?',
       a: [
-        'Lubricate every 15 days',
-        'Clean mud after field usage',
-        'Use standard tractor grease',
+       ' Clean mud after field usage',
+       ' Store under covered area',
+         'Check bolts regularly',
+         'Apply grease periodically'
       ],
       icon: Wrench,
     },
