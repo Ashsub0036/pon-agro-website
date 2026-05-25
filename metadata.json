@@ -1,0 +1,6 @@
+{
+  "name": "Pon Agro Implements",
+  "description": "Bilingual agricultural implements manufacturer website for Pon Agro Implements based in Vandavasi, Tamil Nadu, featuring cinematic visual transitions, product listings, and farmer trust builders.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
