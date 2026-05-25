@@ -1,7 +1,7 @@
 /**
  * PREMIUM MINIMAL NAVBAR
  */
-import logo from '../assets/pon-logo.jpeg';
+import logo from '../assets/images/pon-logo.jpeg';
 import React, { useEffect, useState } from 'react';
 import { Menu, X, Globe, MessageSquare, Tractor } from 'lucide-react';
 import { motion } from 'framer-motion';
