@@ -158,17 +158,17 @@ export default function Footer({ lang }: FooterProps) {
               {[
                 {
                   icon: Youtube,
-                  href: 'https://youtube.com',
+                  href: 'https://www.youtube.com/@villagethamizhan',
                   hover: 'hover:bg-red-600',
                 },
                 {
                   icon: Instagram,
-                  href: 'https://instagram.com',
+                  href: 'https://www.instagram.com/village_thamizhan',
                   hover: 'hover:bg-pink-600',
                 },
                 {
                   icon: Facebook,
-                  href: 'https://facebook.com',
+                  href: 'https://m.facebook.com/?_rdr',
                   hover: 'hover:bg-blue-600',
                 },
               ].map((social, i) => {
